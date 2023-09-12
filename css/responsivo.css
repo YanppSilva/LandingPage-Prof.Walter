@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1440px) {
   .service-box {
     min-height: 40rem;
@@ -33,6 +34,10 @@
 
   .service-box {
     min-height: 43rem;
+  }
+
+  .fidelity {
+    padding-bottom: 7rem;
   }
 
   .project {
@@ -113,13 +118,17 @@
   .project-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .fidelity h2 {
+    margin-bottom: 3rem;
+  }
 }
 
 @media screen and (max-width: 617px) {
  .project-container {
   grid-template-columns: 1fr;
  } 
-}
+ }
 
 @media screen and (max-width: 475px) {
   html {
@@ -145,6 +154,26 @@
 
   .service-box img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .fidelity-box a {
+    width: 100%;
+  }
+
+  .fidelity-box a div .fidelity-text {
+    font-size: 1.5rem;
+    padding: .8rem 1.8rem;
+  }
+
+  .fidelity-box a div .fidelity-price {
+    font-size: 2rem;
+    padding: .8rem 1.8rem;
+  }
+
+  .fidelity-box a img {
+    width: 50%;
   }
 }
 

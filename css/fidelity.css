@@ -7,10 +7,15 @@
 }
 
 .fidelity-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 2.5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.fidelity-box {
+  width: 466px;
 }
 
 .fidelity-box a {
@@ -21,6 +26,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .fidelity-box div {
@@ -31,12 +37,12 @@
 .fidelity-box div .fidelity-text {
   font-size: 2rem;
   color: var(--text-color);
-  margin: 0 4rem;
+  padding: 1rem 2rem;
 }
 
 .fidelity-box div .fidelity-price {
   font-size: 3rem;
-  margin: 0 4rem;
+  padding: 1rem 2rem;
 }
 
 .fidelity-content {
@@ -46,4 +52,12 @@
 .fidelity-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+}
+
+.fidelity-container .fidelity-box {
+  transition: .4s ease;
+}
+
+.fidelity-container .fidelity-box:hover {
+  transform: scale(1.02);
 }

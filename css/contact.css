@@ -38,3 +38,10 @@
   margin-top: 2rem;
   cursor: pointer;
 }
+
+.contact form .input-box span {
+  display: none;
+  color: #e63636;
+  font-size: 13px;
+  margin: 3px 0 0 1px;
+}
