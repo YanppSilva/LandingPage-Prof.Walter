@@ -6,6 +6,19 @@
 
 .home-img img {
   width: 35vw;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-2.1rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 .home-content h3:nth-of-type(2) {
@@ -54,7 +67,7 @@ span {
 
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;;
+  padding: 1rem 1.5rem;;
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);

@@ -29,4 +29,59 @@ window.onscroll = () => {
   let header = document.querySelector('header');
 
   header.classList.toggle('sticky', window.scrollY > 100);
+
+  // remove toggle icon and navbar when click navbar link (scroll)
+
+  menuIcon.classList.remove('bx-x');
+  navbar.classList.remove('active');
 };
+
+// scroll reveal
+ScrollReveal({
+  // reset: true,
+  distance: '80px',
+  duration: 1800,
+  delay: 190
+});
+
+ScrollReveal().reveal('.home-content, .heading', {origin: 'top'})
+ScrollReveal().reveal('.home-img, .services-container, .project-box, .contact form', {origin: 'bottom'})
+ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'})
+ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'})
+
+
+//typed js
+
+const typed = new Typed('.multiple-text', {
+  strings: ['Professor', 'Criador de Conteúdo', 'Consultor Cripto'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: 1000
+});
+
+//show topics
+document.addEventListener("DOMContentLoaded", function () {
+  const botoesLeiaMais = document.querySelectorAll(".leia-mais");
+
+  botoesLeiaMais.forEach(function (botao) {
+      botao.addEventListener("click", function (e) {
+          e.preventDefault();
+          const cursoID = botao.getAttribute("data-course");
+          const topicosCurso = document.getElementById(cursoID);
+
+          if (topicosCurso) {
+              if (topicosCurso.style.maxHeight === "0px") {
+                  topicosCurso.style.maxHeight = "200px"; // Altura máxima para exibir todos os tópicos
+                  botao.textContent = "Fechar";
+              } else {
+                  topicosCurso.style.maxHeight = "0px"; // Oculta os tópicos do curso
+                  botao.textContent = "Leia Mais";
+              }
+          }
+      });
+  });
+});
+
+
+
