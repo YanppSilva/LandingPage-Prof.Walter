@@ -11,7 +11,7 @@
 }
 
 .service-box {
-  min-height: 35rem;
+  min-height: 55rem;
 }
 
 .services-container .service-box {
@@ -30,7 +30,7 @@
 }
 
 .service-box i {
-  font-size: 7rem;
+  font-size: 5rem;
   color: var(--main-color);
 }
 
@@ -39,7 +39,7 @@
 }
 
 .service-box p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: 1rem 0 3rem;
 }
 
@@ -51,5 +51,17 @@
   margin-top: 1rem;
   overflow: hidden;
   transition: max-height .6s ease;
+}
+
+.course-topics div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.9rem;
+}
+
+.service-box img {
+  margin: .6rem 0;
+  border-radius: 8px;
 }
 

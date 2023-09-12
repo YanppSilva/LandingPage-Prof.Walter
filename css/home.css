@@ -67,10 +67,10 @@ span {
 
 .btn {
   display: inline-block;
-  padding: 1rem 1.5rem;;
+  padding: 1rem 1.5rem;
   background: var(--main-color);
   border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--main-color);
+  box-shadow: 0 0 .7rem var(--main-color);
   font-size: 1.6rem;
   color: var(--second-bg-color);
   letter-spacing: .1rem;

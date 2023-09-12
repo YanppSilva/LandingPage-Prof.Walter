@@ -45,9 +45,10 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', {origin: 'top'})
-ScrollReveal().reveal('.home-img, .services-container, .project-box, .contact form', {origin: 'bottom'})
+ScrollReveal().reveal('.home-img, .services-container, .project-box, .contact form, .fidelity-container', {origin: 'bottom'})
 ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'})
 ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'})
+ScrollReveal().reveal('.fidelity-content', {origin: 'right'})
 
 
 //typed js
@@ -72,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           if (topicosCurso) {
               if (topicosCurso.style.maxHeight === "0px") {
-                  topicosCurso.style.maxHeight = "200px"; // Altura máxima para exibir todos os tópicos
+                  topicosCurso.style.maxHeight = "350px"; // Altura máxima para exibir todos os tópicos
                   botao.textContent = "Fechar";
               } else {
                   topicosCurso.style.maxHeight = "0px"; // Oculta os tópicos do curso

@@ -1,0 +1,49 @@
+.fidelity {
+  background: var(--second-bg-color);
+}
+
+.fidelity h2 {
+  margin-bottom: 5rem;
+}
+
+.fidelity-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.fidelity-box a {
+  position: relative;
+  border: 2px solid var(--main-color);
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.fidelity-box div {
+  display: flex;
+  flex-direction: column;
+}
+
+.fidelity-box div .fidelity-text {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin: 0 4rem;
+}
+
+.fidelity-box div .fidelity-price {
+  font-size: 3rem;
+  margin: 0 4rem;
+}
+
+.fidelity-content {
+  font-size: 2rem;
+}
+
+.fidelity-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}

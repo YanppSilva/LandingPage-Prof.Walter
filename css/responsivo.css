@@ -1,3 +1,17 @@
+@media screen and (max-width: 1440px) {
+  .service-box {
+    min-height: 40rem;
+  }
+
+  .service-box p {
+    font-size: 1.5rem;
+  }
+
+  .service-box .course-topics ul li {
+    font-size: 1.4rem;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -15,6 +29,10 @@
 
   .services {
     padding-bottom: 7rem;
+  }
+
+  .service-box {
+    min-height: 43rem;
   }
 
   .project {
@@ -108,6 +126,10 @@
     font-size: 50%;
   }
 
+  .heading {
+    font-size: 3.5rem;
+  }
+
   .contact form .input-box input {
     width: 100%;
   }
@@ -119,6 +141,10 @@
   .footer p {
     text-align: center;
     margin-top: 2rem;
+  }
+
+  .service-box img {
+    width: 100%;
   }
 }
 
