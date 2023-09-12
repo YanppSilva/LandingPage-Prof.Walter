@@ -9,10 +9,10 @@
   margin-bottom: 3rem;
 }
 
-.contact form .input-box {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.contact-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .contact form .input-box input,
@@ -26,12 +26,13 @@
   margin: .7rem 0;
 }
 
-.contact form .input-box input {
+/* .contact form .input-box input {
   width: 49%;
-}
+} */
 
 .contact form textarea {
   resize: none;
+  
 }
 
 .contact form .btn {
@@ -44,4 +45,5 @@
   color: #e63636;
   font-size: 13px;
   margin: 3px 0 0 1px;
+  text-align: left;
 }

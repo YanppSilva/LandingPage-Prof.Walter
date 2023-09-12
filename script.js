@@ -85,67 +85,161 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const form = document.getElementById('form');
-const campos = document.querySelectorAll('.required');
-const spans = document.querySelectorAll('.span-required');
-const numeroRegex = /^[0-9]{11}$/;
-const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("form");
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  nameValidate();
-  emailValidate();
-  numberValidate();
-  subjectValidate();
-  textValidate()
-}); 
+  // Função para validar o nome
+  function validateName() {
+    const nomeInput = document.querySelector('input[name="Nome"]');
+    const spanNome = document.querySelector('.span-required.nome');
 
-function setError(index) {
-  campos[index].style.border = '2px solid #e63636';
-  spans[index].style.display = 'block';
-}
-
-function removeError(index) {
-  campos[index].style.border = '';
-  spans[index].style.display = 'none';
-}
-
-function nameValidate() {
-  if(campos[0].value.length < 3) {
-    setError(0);
-  } else {
-    removeError(0)
+    if (nomeInput.value.length < 3) {
+      spanNome.style.display = "block";
+      return false;
+    } else {
+      spanNome.style.display = "none";
+      return true;
+    }
   }
-}
 
-function emailValidate() {
-  if(!emailRegex.test(campos[1].value)) {
-    setError(1);
-  } else {
-    removeError(1);
-  }
-}
+  // Função para validar o email
+  function validateEmail() {
+    const emailInput = document.querySelector('input[name="Email"]');
+    const spanEmail = document.querySelector('.span-required.email');
+    const emailPattern = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-function numberValidate() {
-  if(!numeroRegex.test(campos[2].value)) {
-    setError(2);
-  } else {
-    removeError(2);
+    if (!emailPattern.test(emailInput.value)) {
+      spanEmail.style.display = "block";
+      return false;
+    } else {
+      spanEmail.style.display = "none";
+      return true;
+    }
   }
-}
 
-function subjectValidate() {
-  if(campos[3].value.length < 1) {
-    setError(3);
-  } else {
-    removeError(3);
-  }
-}
+  // Função para validar o número
+  function validateNumber() {
+    const numeroInput = document.querySelector('input[name="Número"]');
+    const spanNumero = document.querySelector('.span-required.numero');
+    const numeroPattern = /^[0-9]{11}$/;
 
-function textValidate() {
-  if(campos[4].value.length < 1) {
-    setError(4);
-  } else {
-    removeError(4);
+    if (!numeroPattern.test(numeroInput.value)) {
+      spanNumero.style.display = "block";
+      return false;
+    } else {
+      spanNumero.style.display = "none";
+      return true;
+    }
   }
-}
+
+  // Função para validar o assunto
+  function validateAssunto() {
+    const assuntoInput = document.querySelector('input[name="Assunto"]');
+    const spanAssunto = document.querySelector('.span-required.assunto');
+
+    if (assuntoInput.value.length < 2) {
+      spanAssunto.style.display = "block";
+      return false;
+    } else {
+      spanAssunto.style.display = "none";
+      return true;
+    }
+  }
+
+  // Função para validar o textarea
+  function validateTextarea() {
+    const textareaInput = document.querySelector('textarea[name="message"]');
+    const spanTextarea = document.querySelector('.span-required.textarea');
+
+    if (textareaInput.value.length < 2) {
+      spanTextarea.style.display = "block";
+      return false;
+    } else {
+      spanTextarea.style.display = "none";
+      return true;
+    }
+  }
+
+  // Adicionar eventos oninput para realizar a validação
+  form.addEventListener("input", function() {
+    validateName();
+    validateEmail();
+    validateNumber();
+    validateAssunto();
+    validateTextarea();
+  });
+
+  // Evento de envio do formulário
+  form.addEventListener("submit", function(event) {
+    if (
+      !validateName() ||
+      !validateEmail() ||
+      !validateNumber() ||
+      !validateAssunto() ||
+      !validateTextarea()
+    ) {
+      event.preventDefault(); // Impede o envio do formulário se a validação falhar
+    }
+  });
+});
+
+
+// const form = document.getElementById('form');
+// const campos = document.querySelectorAll('.required');
+// const spans = document.querySelectorAll('.span-required');
+// const numeroRegex = /^[0-9]{11}$/;
+// const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+// form.addEventListener('submit', (event) => {
+//   let hasErrors = false;
+  
+//   for (let i = 0; i < campos.length; i++) {
+//     if (!validateField(i)) {
+//       hasErrors = true;
+//     }
+//   }
+
+//   if (hasErrors) {
+//     event.preventDefault();
+//   }
+// });
+
+// function setError(index) {
+//   campos[index].style.border = '2px solid #e63636';
+//   spans[index].style.display = 'block';
+// }
+
+// function removeError(index) {
+//   campos[index].style.border = '';
+//   spans[index].style.display = 'none';
+// }
+
+// function validateField(index) {
+//   const value = campos[index].value;
+//   let isValid = true;
+
+//   switch (index) {
+//     case 0: // Nome
+//       isValid = value.length >= 3;
+//       break;
+//     case 1: // Email
+//       isValid = emailRegex.test(value);
+//       break;
+//     case 2: // Número
+//       isValid = numeroRegex.test(value);
+//       break;
+//     case 3: // Assunto
+//     case 4: // Sua Mensagem
+//       isValid = value.length >= 1;
+//       break;
+//   }
+
+//   if (!isValid) {
+//     setError(index);
+//   } else {
+//     removeError(index);
+//   }
+
+//   return isValid;
+// }
+

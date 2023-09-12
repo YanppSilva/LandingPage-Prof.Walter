@@ -267,31 +267,41 @@
     <h2 class="heading">Fale <span>Comigo!</span></h2>
 
     <form action="https://formsubmit.co/yan.mini.clash@gmail.com" id="form" method="post">
-      <div class="input-box">
-
-        <input type="text" name="Nome" placeholder="Nome Completo" class="inputs required" oninput="nameValidate()">
-        <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
-
-        <input type="email" name="Email" placeholder="Email" class="inputs required" oninput="emailValidate()">
-        <span class="span-required">Digite um email válido</span>
-
+      <div class="contact-container">
+        <div class="input-box">
+          <input type="text" name="Nome" id="nome" placeholder="Nome Completo">
+          <span class="span-required nome">Nome deve ter no mínimo 3 caracteres</span>
+        </div>
+    
+        <div class="input-box">
+          <input type="email" name="Email" id="email" placeholder="Email">
+          <span class="span-required email">Digite um email válido</span>
+        </div>
+    
+        <div class="input-box">
+          <input type="number" name="Número" id="numero" placeholder="Telefone">
+          <span class="span-required numero">Número deve conter 11 dígitos</span>
+        </div>
+    
+        <div class="input-box">
+          <input type="text" name="Assunto" id="assunto" placeholder="Assunto">
+          <span class="span-required assunto">Assunto deve ter mais que 2 dígitos</span>
+        </div>
       </div>
+    
       <div class="input-box">
-
-        <input type="number" name="Número" placeholder="Telefone" class="inputs required" oninput="numberValidate()">
-        <span class="span-required">Número deve conter 11 digitos</span>
-
-        <input type="text" name="Assunto" placeholder="Assunto" class="inputs required" oninput="subjectValidate()">
-        <span class="span-required">Texto não pode estar vazio.</span>
-
+        <textarea cols="30" rows="10" name="message" id="message" placeholder="Sua Mensagem"></textarea>
+        <span class="span-required textarea">Texto não pode estar vazio.</span>
       </div>
-      <textarea cols="30" rows="10" name="message" placeholder="Sua Mensagem" class="inputs required" oninput="textValidate()"></textarea>
+    
       <button type="submit" class="btn" target="_blank">Enviar</button>
       <input type="hidden" name="_subject" value="Novo Contato!">
       <input type="text" name="_honey" style="display:none">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
     </form>
+    
+    
   </section>
 
   <!-- footer desing -->
