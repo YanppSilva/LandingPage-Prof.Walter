@@ -54,7 +54,7 @@ ScrollReveal().reveal('.fidelity-content', {origin: 'right'})
 //typed js
 
 const typed = new Typed('.multiple-text', {
-  strings: ['Professor', 'Criador de Conteúdo', 'Consultor Cripto'],
+  strings: ['Criador de Conteúdo', 'Consultor Cripto'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
@@ -182,64 +182,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
-
-
-// const form = document.getElementById('form');
-// const campos = document.querySelectorAll('.required');
-// const spans = document.querySelectorAll('.span-required');
-// const numeroRegex = /^[0-9]{11}$/;
-// const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-
-// form.addEventListener('submit', (event) => {
-//   let hasErrors = false;
-  
-//   for (let i = 0; i < campos.length; i++) {
-//     if (!validateField(i)) {
-//       hasErrors = true;
-//     }
-//   }
-
-//   if (hasErrors) {
-//     event.preventDefault();
-//   }
-// });
-
-// function setError(index) {
-//   campos[index].style.border = '2px solid #e63636';
-//   spans[index].style.display = 'block';
-// }
-
-// function removeError(index) {
-//   campos[index].style.border = '';
-//   spans[index].style.display = 'none';
-// }
-
-// function validateField(index) {
-//   const value = campos[index].value;
-//   let isValid = true;
-
-//   switch (index) {
-//     case 0: // Nome
-//       isValid = value.length >= 3;
-//       break;
-//     case 1: // Email
-//       isValid = emailRegex.test(value);
-//       break;
-//     case 2: // Número
-//       isValid = numeroRegex.test(value);
-//       break;
-//     case 3: // Assunto
-//     case 4: // Sua Mensagem
-//       isValid = value.length >= 1;
-//       break;
-//   }
-
-//   if (!isValid) {
-//     setError(index);
-//   } else {
-//     removeError(index);
-//   }
-
-//   return isValid;
-// }
 

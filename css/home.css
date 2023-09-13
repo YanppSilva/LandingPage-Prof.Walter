@@ -5,7 +5,7 @@
 }
 
 .home-img img {
-  width: 35vw;
+  width: 25vw;
   animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -42,6 +42,7 @@ span {
 
 .home-content p {
   font-size: 1.6rem;
+  width: 90%;
 }
 
 .social-media a{
