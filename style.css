@@ -26,6 +26,7 @@
   --bg-color: #1f232d;
   --second-bg-color: #323946;
   --text-color: #fff;
+  --second-color: #FFAE31;
   --main-color: #0ef;
 }
 
@@ -36,11 +37,29 @@ html {
 
 body {
   background: var(--bg-color);
+  overflow: hidden;
   color: var(--text-color);
 }
 
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 .7rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: .1rem;
+  font-weight: 500;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
 }
 
