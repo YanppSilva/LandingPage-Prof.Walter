@@ -1,0 +1,67 @@
+.training h2{
+  margin-bottom: 5rem;
+}
+
+.training-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.training-box {
+  min-height: 55rem;
+}
+
+.training-container .training-box {
+  flex: 1 1 30rem;
+  background: var(--second-bg-color);
+  padding: 3rem 2rem 3rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: .2rem solid var(--bg-color);
+  transition: .4s ease;
+}
+
+.training-container .training-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+
+.training-box i {
+  font-size: 5rem;
+  color: var(--main-color);
+}
+
+.training-box h3 {
+  font-size: 2.6rem;
+}
+
+.training-box p {
+  font-size: 1.5rem;
+  margin: 1rem 0 3rem;
+}
+
+.course-topics {
+  max-height: 0;
+  font-size: 1.6rem;
+  text-align: left;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  overflow: hidden;
+  transition: max-height .6s ease;
+}
+
+.course-topics div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.9rem;
+}
+
+.training-box img {
+  margin: .6rem 0;
+  border-radius: 8px;
+}
+

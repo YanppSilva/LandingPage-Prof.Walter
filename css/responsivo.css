@@ -1,13 +1,13 @@
 @media screen and (max-width: 1440px) {
-  .service-box {
+  .training-box {
     min-height: 40rem;
   }
 
-  .service-box p {
+  .training-box p {
     font-size: 1.5rem;
   }
 
-  .service-box .course-topics ul li {
+  .training-box .course-topics ul li {
     font-size: 1.4rem;
   }
 }
@@ -27,11 +27,11 @@
     padding: 10rem 3% 2rem;
   }
 
-  .services {
+  .training {
     padding-bottom: 7rem;
   }
 
-  .service-box {
+  .training-box {
     min-height: 43rem;
   }
 
@@ -106,7 +106,7 @@
     margin-top: 4rem;
   }
 
-  .services h2 {
+  .training h2 {
     margin-bottom: 3rem;
   }
 
@@ -159,7 +159,7 @@
     margin-top: 2rem;
   }
 
-  .service-box img {
+  .training-box img {
     width: 100%;
   }
 
