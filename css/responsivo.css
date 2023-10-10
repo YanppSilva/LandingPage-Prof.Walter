@@ -1,4 +1,12 @@
 @media screen and (max-width: 1440px) {
+  .home-content {
+    width: 75%;
+  }
+
+  .home-img img {
+    width: 100%;
+  }
+
   .training-box {
     min-height: 40rem;
   }
@@ -16,11 +24,43 @@
   html {
     font-size: 55%;
   }
+
+  .logo {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  .home-content h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+  }
+
+  .home-content p {
+    font-size: 1.5rem;
+  }
+
+  .social-media a {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
   .header {
     padding: 2rem 3%;
+  }
+
+  .logo {
+    font-size: 1.9rem;
+  }
+
+  .navbar a {
+    font-size: 1.5rem;
   }
 
   section {
@@ -82,6 +122,10 @@
 
   .home {
     flex-direction: column;
+  }
+
+  .home-content {
+    width: 100%;
   }
 
   .home-content h3 {
@@ -170,6 +214,10 @@
 }
 
 @media screen and (max-width: 425px) {
+  .navbar a {
+    font-size: 1.5rem;
+  }
+
   .fidelity-box a {
     width: 100%;
   }
@@ -199,7 +247,8 @@
   }
 
   .home-img {
-    width: 90vw;
+    width: 60vw;
+    margin-top: 10px;
   }
 
   .about-img img {

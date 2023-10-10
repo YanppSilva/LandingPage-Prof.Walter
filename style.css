@@ -7,6 +7,8 @@
 @import url(css/footer.css);
 @import url(css/responsivo.css);
 @import url(css/fidelity.css);
+@import url(css/depositions.css);
+@import url(css/index-email.css);
 
 /* Fontes do Projeto */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -28,6 +30,7 @@
   --text-color: #fff;
   --second-color: #FFAE31;
   --main-color: #0ef;
+  --confirmed: #00FA9A;
 }
 
 html {

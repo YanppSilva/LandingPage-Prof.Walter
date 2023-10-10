@@ -1,13 +1,19 @@
 .home {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-image: url(../assets/banner/banner3.png);
   background-position: center;
 }
 
+.home-img {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+
 .home-img img {
-  width: 25vw;
+  width: 60%;
   animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -21,6 +27,10 @@
   100%{
     transform: translateY(0);
   }
+}
+
+.home-content {
+  width: 50%;
 }
 
 .home-content h3:nth-of-type(2) {
