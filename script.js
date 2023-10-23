@@ -61,26 +61,26 @@ const typed = new Typed('.multiple-text', {
   loop: 1000
 });
 
-//show topics
+//mostra topics
 document.addEventListener("DOMContentLoaded", function () {
   const botoesLeiaMais = document.querySelectorAll(".leia-mais");
 
   botoesLeiaMais.forEach(function (botao) {
-      botao.addEventListener("click", function (e) {
-          e.preventDefault();
-          const cursoID = botao.getAttribute("data-course");
-          const topicosCurso = document.getElementById(cursoID);
+    botao.addEventListener("click", function (e) {
+      e.preventDefault();
+      const cursoID = botao.getAttribute("data-course");
+      const topicosCurso = document.getElementById(cursoID);
 
-          if (topicosCurso) {
-              if (topicosCurso.style.maxHeight === "0px") {
-                  topicosCurso.style.maxHeight = "350px"; // Altura máxima para exibir todos os tópicos
-                  botao.textContent = "Fechar";
-              } else {
-                  topicosCurso.style.maxHeight = "0px"; // Oculta os tópicos do curso
-                  botao.textContent = "Leia Mais";
-              }
-          }
-      });
+      if (topicosCurso) {
+        if (topicosCurso.style.maxHeight === "0px" || topicosCurso.style.maxHeight === "") {
+          topicosCurso.style.maxHeight = "350px";
+          botao.textContent = "Fechar";
+        } else {
+          topicosCurso.style.maxHeight = "0px";
+          botao.textContent = "Leia Mais";
+        }
+      }
+    });
   });
 });
 

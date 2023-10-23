@@ -1,3 +1,7 @@
+.header a {
+  cursor: pointer;
+}
+
 .email-confirmed {
   padding: 10rem 9% 2rem;
   height: calc(100vh - 82.64px);
@@ -35,4 +39,11 @@
 
 .container-box p {
   font-size: 2.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  .email-confirmed {
+    height: calc(100vh - 143px);
+  }
 }
