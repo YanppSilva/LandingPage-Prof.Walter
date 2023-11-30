@@ -66,7 +66,7 @@
   section {
     padding: 10rem 3% 2rem;
   }
-
+  
   .training {
     padding-bottom: 7rem;
   }
@@ -148,6 +148,10 @@
   .about img {
     width: 70vw;
     margin-top: 4rem;
+  }
+
+  .bg {
+    display: none;
   }
 
   .training h2 {

@@ -34,6 +34,8 @@
 
 .depositions-box img {
   width: 70px;
+  height: 65px;
+  border-radius: 50%;
   position: absolute;
   bottom: -30px;
   left: 42%;

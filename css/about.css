@@ -4,6 +4,7 @@
   align-items: center;
   gap: 5rem;
   background: var(--second-bg-color);
+  position: relative;
 }
 
 .about-img img {
@@ -27,4 +28,10 @@
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+}
+
+.bg {
+  position: absolute;
+  right: 0;
+  width: auto;
 }
